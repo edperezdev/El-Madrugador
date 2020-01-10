@@ -56,6 +56,28 @@ p {
 .bottom-news a:hover {
   text-decoration: underline;
 }
+
+.hora-share-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.share-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.share-icons li {
+  margin-left: 10px;
+  color: rgba(235, 224, 224, 0.836);
+  transition: all 0.2 ease-in;
+  cursor: pointer;
+}
+
+.share-icons li:hover {
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.959);
+}
+
 /* Header */
 
 header {
@@ -72,6 +94,13 @@ header {
   margin-top: -80px;
   box-shadow: 0.5em 0 5px rgba(92, 92, 80, 0.527),
     -0.5em 0 5px rgb(92, 92, 80, 0.527);
+}
+
+.date-header{
+  margin-top:5px;
+  color:white;
+  font-size:9px;
+
 }
 
 header ul {
@@ -195,26 +224,7 @@ header ul a:hover {
   padding: 10px;
 }
 
-.hora-share-buttons {
-  display: flex;
-  justify-content: space-between;
-}
 
-.share-icons {
-  display: flex;
-  justify-content: space-evenly;
-}
-.share-icons li {
-  margin-left: 10px;
-  color: rgba(235, 224, 224, 0.836);
-  transition: all 0.2 ease-in;
-  cursor: pointer;
-}
-
-.share-icons li:hover {
-  margin-left: 10px;
-  color: rgba(255, 255, 255, 0.959);
-}
 
 /* BOTTOM NEWS */
 
@@ -404,6 +414,31 @@ footer {
   height: 80px;
 }
 
+.logo-icons-footer{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-icons{
+  display:flex;
+  margin-left:20px;
+}
+
+.footer-icons li{
+  margin-left:10px;
+  cursor: pointer;
+  color:rgb(129, 119, 119);
+  transition: all 0.4 ease-in;
+}
+.footer-icons li:hover{
+  color:white;
+
+}
 footer h1 {
-  font-size: 20px;
+font-size: 20px;
+}
+
+footer p {
+color: gray;
 }

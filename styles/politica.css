@@ -1,0 +1,298 @@
+/* Globales */
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: auto;
+  width: 80%;
+  color: white;
+  font-family: Verdana;
+  box-sizing: border-box;
+  background-color: #eedada;
+  box-shadow: 0.5em 0 5px rgba(92, 92, 80, 0.527),
+    -0.5em 0 5px rgb(92, 92, 80, 0.527);
+}
+
+h1 {
+  font: bolder 36px "Gill Sans", "Gill Sans MT";
+}
+
+h2 {
+  font-size: 30px;
+  color: black;
+  border-bottom: 4px solid black;
+  font-weight: bold;
+  font-style: oblique;
+  display: inline;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  color: black;
+  margin-top: 5px;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: bold;
+  background: rgba(5, 0, 0, 0.678);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+h5 {
+  font-size: 10px;
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  font-size: 10px;
+  color: black;
+  line-height: 20px;
+}
+
+.share-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.share-icons li {
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.836);
+  transition: all 0.2 ease-in;
+  cursor: pointer;
+}
+
+.share-icons li:hover {
+  margin-left: 10px;
+  color: rgba(50, 31, 224, 0.959);
+}
+
+/* Header */
+
+header {
+  background-color: rgb(75, 60, 60);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding: 30px;
+  box-sizing: border-box;
+  position: fixed;
+  width: 80%;
+  margin-top: -80px;
+  box-shadow: 0.5em 0 5px rgba(92, 92, 80, 0.527),
+    -0.5em 0 5px rgb(92, 92, 80, 0.527);
+}
+
+.date-header {
+  margin-top: 5px;
+  color: white;
+  font-size: 9px;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  margin-right: 10px;
+}
+
+.header-icons {
+  font-size: 25px;
+}
+
+.header-icons li {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.header-icons li:hover {
+  transform: scale(1.4);
+}
+
+.nav a {
+  transition: all 0.2s ease-in-out;
+}
+
+.nav a:not(:first-child) {
+  background: rgb(75, 60, 60);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+header ul a:hover,
+.active {
+  background: rgb(248, 248, 248);
+  color: black;
+  font-weight: bold;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.header-tags {
+  background-color: rgb(54, 44, 44);
+  height: 20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+  border-top: 1px solid white;
+  margin-top:80px;
+}
+
+.header-tags ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header-tags ul li {
+  font-size: 11.5px;
+}
+
+.header-tags ul a {
+  transition: all 1s ease-in-out;
+  padding: 5px 0px;
+}
+
+.header-tags ul a:hover {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+/* LEFT COLUMN */
+
+main {
+  background-color: white;
+  padding: 20px 30px;
+}
+
+.main-news {
+  display: grid;
+  grid-template-columns: 1fr 33%;
+  gap: 25px;
+}
+
+.main-news h3:hover {
+  text-decoration: underline;
+}
+
+.politic-articles {
+  margin-top: 25px;
+}
+
+.article1,
+.article2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.article-body img {
+  width: 300px;
+  height: 140px;
+}
+
+.article-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.article-body {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.article-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+/* RIGHT COLUMN */
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.article2 {
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+}
+
+.article2 img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.ads {
+  width: 100%;
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 5px;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./../images/burger.jpg);
+  background-position: center center;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  background-color: rgb(32, 23, 23);
+  height: 80px;
+}
+
+.logo-icons-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-icons {
+  display: flex;
+  margin-left: 20px;
+}
+
+.footer-icons li {
+  margin-left: 10px;
+  cursor: pointer;
+  color: rgb(129, 119, 119);
+  transition: all 0.4 ease-in;
+}
+.footer-icons li:hover {
+  color: white;
+}
+footer h1 {
+  font-size: 20px;
+}
+
+footer p {
+  color: gray;
+}
