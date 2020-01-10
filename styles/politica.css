@@ -8,7 +8,7 @@ body {
   color: white;
   font-family: Verdana;
   box-sizing: border-box;
-  background-color: #eedada;
+  background-color: #e5e5e5;
   box-shadow: 0.5em 0 5px rgba(92, 92, 80, 0.527),
     -0.5em 0 5px rgb(92, 92, 80, 0.527);
 }
