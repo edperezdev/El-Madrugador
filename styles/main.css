@@ -15,6 +15,7 @@ body {
 
 h1 {
   font: bolder 36px "Gill Sans", "Gill Sans MT";
+  min-width: 30%;
 }
 
 h2 {
