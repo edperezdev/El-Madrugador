@@ -94,13 +94,13 @@ header {
   margin-top: -80px;
   box-shadow: 0.5em 0 5px rgba(92, 92, 80, 0.527),
     -0.5em 0 5px rgb(92, 92, 80, 0.527);
+    z-index: 3;
 }
 
-.date-header{
-  margin-top:5px;
-  color:white;
-  font-size:9px;
-
+.date-header {
+  margin-top: 5px;
+  color: white;
+  font-size: 9px;
 }
 
 header ul {
@@ -166,6 +166,23 @@ header ul a:hover {
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.main-new::before,.vertical-rectangle-new::before,
+.horizontal-rectangle-new1::before,
+.horizontal-rectangle-new2::before,
+.horizontal-rectangle-new3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: rgba(61, 61, 57, 0.527);
 }
 
 .main-new {
@@ -174,6 +191,7 @@ header ul a:hover {
   background-size: cover;
   background-position: bottom;
   padding: 20px;
+  
 }
 
 .main-new h2 {
@@ -223,8 +241,6 @@ header ul a:hover {
   background-position: center center;
   padding: 10px;
 }
-
-
 
 /* BOTTOM NEWS */
 
@@ -278,13 +294,35 @@ header ul a:hover {
 .horizontal-rectangle-actualidad11,
 .horizontal-rectangle-actualidad12 {
   margin-bottom: 20px;
-
   height: 160px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 10px;
+  position: relative;
+  z-index: 2;
+}
+.horizontal-rectangle-actualidad1::before,
+.horizontal-rectangle-actualidad2::before,
+.horizontal-rectangle-actualidad3::before,
+.horizontal-rectangle-actualidad4::before,
+.horizontal-rectangle-actualidad5::before,
+.horizontal-rectangle-actualidad6::before,
+.horizontal-rectangle-actualidad7::before,
+.horizontal-rectangle-actualidad8::before,
+.horizontal-rectangle-actualidad9::before,
+.horizontal-rectangle-actualidad10::before,
+.horizontal-rectangle-actualidad11::before,
+.horizontal-rectangle-actualidad12::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: rgba(61, 61, 57, 0.527);
 }
 
 .horizontal-rectangle-actualidad1 {
@@ -330,10 +368,10 @@ header ul a:hover {
 }
 
 .horizontal-rectangle-actualidad8 {
-    background-image: url(./../images/mario.jpg);
-    background-size: cover;
-    background-position: center center;
-  }
+  background-image: url(./../images/mario.jpg);
+  background-size: cover;
+  background-position: center center;
+}
 
 .horizontal-rectangle-actualidad9 {
   background-image: url(./../images/cusco.jpg);
@@ -414,31 +452,30 @@ footer {
   height: 80px;
 }
 
-.logo-icons-footer{
-  display:flex;
+.logo-icons-footer {
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.footer-icons{
-  display:flex;
-  margin-left:20px;
+.footer-icons {
+  display: flex;
+  margin-left: 20px;
 }
 
-.footer-icons li{
-  margin-left:10px;
+.footer-icons li {
+  margin-left: 10px;
   cursor: pointer;
-  color:rgb(129, 119, 119);
+  color: rgb(129, 119, 119);
   transition: all 0.4 ease-in;
 }
-.footer-icons li:hover{
-  color:white;
-
+.footer-icons li:hover {
+  color: white;
 }
 footer h1 {
-font-size: 20px;
+  font-size: 20px;
 }
 
 footer p {
-color: gray;
+  color: gray;
 }
